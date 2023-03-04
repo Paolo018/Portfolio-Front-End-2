@@ -1,24 +1,275 @@
+/* Seccion inicio */
+
+#sobre {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/img/inicio.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 .logoAp {
     filter: invert();
-    width: 12%;
-    height: 12%;
+    width: 100%;
+    height: 100%;
 }
 
-.imgPerfil {
-    width: 25%;
-    height: 25%;
+#links {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-.nombrePerfil {
-    font-size: 5rem;
-    border-style: solid;
+.directorio li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 12px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.directorio li a:hover {
+    color: purple;
+}
+
+.presentacion h2{
+    color: #fff;
 }
 
 .apellido {
+    color: purple;
+    font-size: 3rem;
+}
+
+i.fa-brands.fa-codepen.fa-xl,i.fa-brands.fa-linkedin.fa-xl,i.fa-brands.fa-github.fa-xl,i.fa-solid.fa-user-lock.fa-xl {
+    color: #fff;
+    transition: 0.5s;
+}
+
+i.fa-brands.fa-codepen.fa-xl:hover {
+    color: purple;
+}
+
+i.fa-brands.fa-linkedin.fa-xl:hover {
+    color: purple;
+}
+
+i.fa-brands.fa-github.fa-xl:hover {
+    color: purple;
+}
+
+i.fa-solid.fa-user-lock.fa-xl:hover {
+    color: purple;
+}
+
+
+ul.list-group.list-group-horizontal{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+
+.inicio {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    columns: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio h1 {
+    color: #fff;
+}
+
+.inicio h2 {
+    font-size: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.inicio h4 {
+    color: #fff;
+}
+
+.inicio p {
+    color: #fff;
+    max-width: 100%;
+    margin: 5% auto;
+    font-size: 100%;
+    text-align: center;
+}
+
+.container-fluid {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0; 
+    max-width: 100%;
+    margin: auto;
+}
+
+
+
+.inicio a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #ffff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inicio a:hover {
+    background-color: purple;
+}
+
+/* Seccion Sobre mi */
+
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
     color: black;
+    display: flex;
 }
 
-#sobre {
-    background-color: #cccc
+
+.imgPerfil {
+    max-width: 25%;
+    margin-right: 10%;
 }
 
+.imgPerfil img {
+    padding: 5%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #3f3f3f;
+}
+
+.sobremi {
+    margin: 0% 10%;
+}
+
+.titulo {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+.sobre mi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+
+}
+
+.sobre mi h2 span {
+    color: purple;
+}
+
+.sobre mi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.sobre mi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #56565656;
+    margin-bottom: 12px;
+}
+
+/* Seccion Servicios */
+
+#servicios {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.titulo-servicios {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.servicios {
+    max-width: 350px;
+    background-color: #ffff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.servicios:hover {
+    box-shadow: 5px 5px 5px #56565656, -5px -5px 10px #8a8a8a8a;
+}
+
+.servicios h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.servicios hr {
+    width: 30%;
+    margin: auto;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.servicios ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.servicios p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* Seccion habilidades */
+
+.contenedor-skills {
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("/assets/img/tatooine.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}

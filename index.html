@@ -12,28 +12,35 @@
 </head>
 <body>
     <!--Sección navbar-->
-    <section id="navbar"></section>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img class="logoAp" src="assets/img/logo argentina programa.png" alt="logo-argentina-programa"></a>
-
-            <ul class="list-group list-group-horizontal">
-                <li class="list-group-item"><i class="fa-brands fa-github"></i></li>
-                <li class="list-group-item"><i class="fa-brands fa-linkedin"></i></li>
-                <li class="list-group-item"><i class="fa-brands fa-codepen"></i></li>
-              </ul>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">
-  <i class="fa-solid fa-lock-open"></i>
-</button>
-<button type="button" class="btn btn-light">
-  <i class="fa-solid fa-lock"></i>
-</button>
-
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+          <img src="assets/img/argentina programa inti y ministerio.png" alt="" width="75%" height="auto">
+        </a>
+       <div>
+        <ul id="links" class="directorio">
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#sobremi">SOBRE MI</a></li>
+          <li><a href="#servicios">SERVICIOS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+       </div>
+             <div class="iconos">
+               <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"><i class="fa-brands fa-github fa-xl"></i></li>
+                <li class="list-group-item"><i class="fa-brands fa-linkedin fa-xl"></i></li>
+                <li class="list-group-item"><i class="fa-brands fa-codepen fa-xl"></i></li>
+                <li class="list-group-item">
+                 <!-- Button trigger modal -->
+                 <i class="fa-solid fa-user-lock fa-xl" type="button"  data-bs-toggle="modal" data-bs-target="#loginModal">
+                 </i></li>
+             </div>
           </div>
         </div>
       </nav>
+  </section>
 
       <!-- MODALES -->
 
@@ -76,7 +83,59 @@
   </div>
 </div>
 
-<!-- Modal Img Perfil-->
+<!--Inicio-->
+<section id="sobre" class="inicio">
+  <h1 class="text-center p-3">Bienvenidos</h1>
+  <div class="container text-center">
+  <div class="row">
+    <div class="presentacion">
+        <h2>Soy <span class="apellido">Pablo Paredes</span>, Full Stack Developer Jr.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloribus fuga dolorum, ullam officiis laboriosam.
+        </p>
+        <a href="#portfolio">Ir a portfolio</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Sobre mi -->
+<section id="sobremi">
+      <div class="imgPerfil">
+        <img src="assets/img/WhatsApp Image marzo.jpeg" alt="Foto-de-perfil">
+      </div>
+      <div class="sobremi">
+        <p class="titulo">Sobre mi</p>
+        <h2>Hola, soy <span>Pablo Paredes</span></h2>
+        <h3>Full Stack Developer Jr.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Earum modi nam saepe omnis vel obcaecati excepturi facere assumenda amet dolorem iste animi perferendis tempore voluptas, eaque aperiam?
+            Omnis voluptatibus iure maiores.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, fuga.</p>
+      </div>
+
+</section>
+
+<!-- Editor sobre mi -->
+<section id="editSobre" class="bg-dark p-4">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">
+          Editar imagen
+        </button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn-light" data-bs-toggle="modal" data-bs-target="#nombrePerfilModal">Editar nombre</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn-light" data-bs-toggle="modal" data-bs-target="#infoPerfilModal">Editar info</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal editar img Perfil-->
 <div class="modal fade" id="imgPerfilModal" tabindex="-1" aria-labelledby="imgPerfilModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -102,44 +161,117 @@
   </div>
 </div>
 
+<!-- Seccion servicios -->
+<section id="servicios">
+  <h3 class="titulo-servicios">MIS SERVICIOS</h3>
+  <div class="fila">
+    <div class="servicios">
+      <span class="icono"><i class="fa-solid fa-code"></i></span>
+      <h4>Diseño de Sitios Web</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Web</li>
+        <li>Graphic</li>
+        <li>SEO</li>
+      </ul>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt vitae magni quia non expedita enim.</P>
+    </div>
+    <div class="servicios">
+      <span class="icono"><i class="fa-solid fa-code"></i></span>
+      <h4>Diseño de Sitios Web</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Web</li>
+        <li>Graphic</li>
+        <li>SEO</li>
+      </ul>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt vitae magni quia non expedita enim.</P>
+    </div>
+    <div class="servicios">
+      <span class="icono"><i class="fa-solid fa-code"></i></span>
+      <h4>Diseño de Sitios Web</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Web</li>
+        <li>Graphic</li>
+        <li>SEO</li>
+      </ul>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt vitae magni quia non expedita enim.</P>
+    </div>
+  </div>
+  <div class="fila">
+    <div class="servicios">
+      <span class="icono"><i class="fa-solid fa-code"></i></span>
+      <h4>Diseño de Sitios Web</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Web</li>
+        <li>Graphic</li>
+        <li>SEO</li>
+      </ul>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt vitae magni quia non expedita enim.</P>
+    </div>
+    <div class="servicios">
+      <span class="icono"><i class="fa-solid fa-code"></i></span>
+      <h4>Diseño de Sitios Web</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Web</li>
+        <li>Graphic</li>
+        <li>SEO</li>
+      </ul>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt vitae magni quia non expedita enim.</P>
+    </div>
+    <div class="servicios">
+      <span class="icono"><i class="fa-solid fa-code"></i></span>
+      <h4>Diseño de Sitios Web</h4>
+      <hr>
+      <ul class="servicios-tag">
+        <li>Web</li>
+        <li>Graphic</li>
+        <li>SEO</li>
+      </ul>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt vitae magni quia non expedita enim.</P>
+    </div>
+  </div>
 
-<!--Sobre mi-->
-<section id="sobre">
-  <h2 class="text-center mt-4 p-3">Sobre mi</h2>
-  <div class="container text-center">
-  <div class="row">
-    <div class="col-6">
-        <h1 class="nombrePerfil">Pablo Martin <span class="apellido">Paredes</span></h1>
-        <h4>Programador Full StackJr.</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga maiores architecto ut, saepe corporis?
-        </p>
-    </div>
-    <div class="col-6">
-      <div class="banner">
-        <img class="imgPerfil" src="assets/img/WhatsApp Image 2021-11-24 at 23.00.38.jpeg" alt="Foto-de-perfil">
-      </div>
-    </div>
+</section>
+
+<!-- Seccion habilidades -->
+<div id="skills" class="contenedor-skills">
+  <h3>HABILIDADES</h3>
+  <div class="skills">
+    <p><span class="lista">Html & Css</span></p>
+    <span class="porcentaje">95%</span>
+  </div>
+  <div class="barra">
+    <div id="html" class=""></div>
+  </div>
+
+  <div class="skills">
+    <p><span class="lista">Javascript</span></p>
+    <span class="porcentaje">90%</span>
+  </div>
+  <div class="barra">
+    <div id="html" class=""></div>
+  </div>
+
+  <div class="skills">
+    <p><span class="lista">Base de Datos</span></p>
+    <span class="porcentaje">90%</span>
+  </div>
+  <div class="barra">
+    <div id="html" class=""></div>
+  </div>
+
+  <div class="skills">
+    <p><span class="lista">Potoshop</span></p>
+    <span class="porcentaje">90%</span>
+  </div>
+  <div class="barra">
+    <div id="html" class=""></div>
   </div>
 </div>
-</section>
-<section id="editSobre" class="bg-dark p-4">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">
-          Editar imagen
-        </button>
-      </div>
-      <div class="col">
-        <button class="btn-light">Editar nombre</button>
-      </div>
-      <div class="col">
-        <button class="btn-light">Editar info</button>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- JavaScript Bundle with Papper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
