@@ -198,75 +198,63 @@ ul.list-group.list-group-horizontal{
     margin-bottom: 12px;
 }
 
-/* Seccion Servicios */
+/* Seccion estudios y experiencia */
 
-#servicios {
-    padding: 0px 15px;
+#resumen {
+    background-color: #e6e6e6;
+    padding: 50px 50px;
     text-align: center;
-    background-color: #f3f3f3;
 }
 
-.titulo-servicios {
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
-}
-
-#servicios .fila {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 30px auto;
-}
-
-.servicios {
-    max-width: 350px;
-    background-color: #ffff;
-    padding: 30px;
-    margin: 0 5px;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-.servicios:hover {
-    box-shadow: 5px 5px 5px #56565656, -5px -5px 10px #8a8a8a8a;
-}
-
-.servicios h4 {
-    font-size: 22px;
-    margin-bottom: 25px;
-}
-
-.icono {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #d3d3d3d3;
-    padding: 20px;
-    margin-bottom: 25px;
-}
-
-.servicios hr {
-    width: 30%;
+#resumen .contenido-seccion {
+    max-width: 80%;
     margin: auto;
-    color: black;
-    margin-bottom: 25px;
+    padding: 0 10px;
 }
 
-.servicios ul {
-    list-style: none;
+#resumen .contenido-seccion h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#resumen .info-resumen {
+    text-align: left;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
-.servicios p {
+#resumen .col {
+    width: 45%;
+}
+
+#resumen .col table {
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+#resumen .datos {
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+
+#resumen .col table h4 {
+    margin-top: 10px;
+}
+
+#resumen .col table h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#resumen .col table p {
     font-size: 14px;
-    line-height: 22px;
+}
+
+#resumen .descripcion {
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
 }
 
 /* Seccion habilidades */
@@ -583,23 +571,20 @@ footer a {
         font-size: 25px;
         text-align: center;
     }
-    #servicios {
+    #resumen {
         padding: 50px 15px;
-    }
-    #servicios .fila {
         display: block;
     }
-    .servicios {
+    .resumen {
         margin: 10px auto;
     }
     #skills {
         padding: 50px 20px;
     }
-    #portfolio {
+    #resumen {
         padding: 50px 0;
     }
-
-    #portfolio .fila {
+    #resumen {
         display: flex;
     }
     .proyecto {
