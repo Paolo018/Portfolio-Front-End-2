@@ -128,10 +128,10 @@
         </button>
       </div>
       <div class="col">
-        <button type="button" class="btn-light" data-bs-toggle="modal" data-bs-target="#nombrePerfilModal">Editar nombre</button>
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#nombrePerfilModal">Editar nombre</button>
       </div>
       <div class="col">
-        <button type="button" class="btn-light" data-bs-toggle="modal" data-bs-target="#infoPerfilModal">Editar info</button>
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#infoPerfilModal">Editar info</button>
       </div>
     </div>
   </div>
@@ -151,6 +151,58 @@
           <div class="mb-3">  
             <label for="imgPerfil" class="form-label">Editar imagen</label>
             <input type="url" placeholder="inserte url de imagen" id="imgPerfil" name="imgPerfil" required>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal editar nombre Perfil-->
+<div class="modal fade" id="nombrePerfilModal" tabindex="-1" aria-labelledby="nombrePerfilModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="nombrePerfilModal">Editar nombre de perfil</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">  
+            <label for="nombrePerfil" class="form-label">Editar nombre</label>
+            <input type="email" placeholder="nombre de perfil" id="nombrePerfil" name="nombrePerfil" required>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal editar img Perfil-->
+<div class="modal fade" id="infoPerfilModal" tabindex="-1" aria-labelledby="infoPerfilModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="infoPerfilModal">Editar informacion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">  
+            <label for="infoPerfilModal" class="form-label">Texto</label>
+            <textarea class="form-control" id="infoPerfilModal"></textarea>
           </div>
           
           <div class="modal-footer">
@@ -223,27 +275,70 @@
   </div>
 </section>
 
-
 <!-- Seccion habilidades -->
-<section id="skills">
-<div class="skills">
-  <h3>HABILIDADES</h3>
-   <li><h4>html</h4>
-  <span class="bar"><span class="html"></span></span>
-</li>
-<li><h4>css</h4>
-  <span class="bar"><span class="css"></span></span>
-</li>
-<li><h4>javascript</h4>
-  <span class="bar"><span class="js"></span></span>
-</li>
-<li><h4>bootstrap</h4>
-  <span class="bar"><span class="bs"></span></span>
-</li>
-<li><h4>mysql</h4>
-  <span class="bar"><span class="mysql"></span></span>
-</li>
-</div>
+<section id="skills" class="skills">
+  <div class="contenido-skills">
+    <h2>Skills</h2>
+    <div class="fila-skills">
+      <!-- Skills tecnicos -->
+      <div class="col-skills">
+        <h3>Skills tecnicos</h3>
+      <div class="skill">
+        <span>HTML & CSS</span>
+        <div class="barra-skill">
+          <div class="htmlcss">
+            <span>85%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="barra-skill">
+          <div class="js">
+            <span>70%</span>
+          </div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Bootstrap</span>
+        <div class="barra-skill">
+          <div class="bootstrap">
+            <span>80%</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Skills profesionales -->
+      <div class="col-skills">
+        <h3>Skills profresionales</h3>
+        <div class="skill">
+          <span>Comunicacion</span>
+          <div class="barra-skill">
+            <div class="comunicacion">
+              <span>85%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Trabajo en equipo</span>
+          <div class="barra-skill">
+            <div class="equipo">
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Creatividad</span>
+          <div class="barra-skill">
+            <div class="creatividad">
+              <span>90%</span>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- Seccion portfolio -->

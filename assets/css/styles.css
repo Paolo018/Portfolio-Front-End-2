@@ -259,101 +259,109 @@ ul.list-group.list-group-horizontal{
 
 /* Seccion habilidades */
 
-#skills {
-    background: #f3f3f3;
-    text-transform: uppercase;
-    list-style: none;
-}
-
-.skills h3 {
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
-    text-align: center;
-}
-
-.skills h4 {
-    margin: 5px;
-    color: black;
-}
-
 .skills {
-    width: 500px;
-    margin: 60px auto;
-    color: #ffff;
-    padding: 20px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0, 10px, 10px rgba(0, 0, 0, 0.22);
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 20px;
 }
 
-.skills li {
-    margin: 20px 0;
-    padding: 10px;
+.contenido-skills {
+    max-width: 1100px;
+    margin: auto;
 }
 
-.bar {
-    background: #353b48;
+.skills h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.fila-skills {
+    display: flex;
+}
+
+.col-skills {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.col-skills h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.skill span {
+    font-weight: bold;
     display: block;
-    height: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    margin-bottom: 10px;
 }
 
-.bar:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, .12), 0 10px 10px rgba(0, 0, 0, .22);
+.barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
 }
 
-.bar span {
-    height: 20px;
-    float: left;
-    background: linear-gradient(135deg, violet 0%, purple 100%);
+.htmlcss, .js, .bootstrap, .comunicacion, .equipo, .creatividad {
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
 }
 
-.html {
+.barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: purple;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.htmlcss {
     width: 85%;
-    animation: html 3s;
-}
-
-.css {
-    width: 75%;
-    animation: css 3s;
+    animation: 2s htmlcss forwards;
 }
 
 .js {
-    width: 70%;
-    animation: js 3s;
+    width: 75%;
+    animation: 2s js forwards;
 }
 
-.bs {
+.bootstrap {
     width: 80%;
-    animation: bs 3s;
+    animation: 2s bootstrap forwards;
 }
 
-.mysql {
+.comunicacion {
     width: 80%;
-    animation: mysql 3s;
+    animation: 2s comunicacion forwards;
 }
 
-@keyframes html {
+.equipo {
+    width: 75%;
+    animation: 2s equipo forwards;
+}
+
+.creatividad {
+    width: 90%;
+    animation: 2s creatividad forwards;
+}
+
+@keyframes htmlcss {
     0% {
         width: 0%;
     }
     100% {
         width: 85%;
-    }
-}
-
-@keyframes css {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 75%;
     }
 }
 
@@ -366,7 +374,7 @@ ul.list-group.list-group-horizontal{
     }
 }
 
-@keyframes bs {
+@keyframes bootstrap {
     0% {
         width: 0%;
     }
@@ -375,14 +383,33 @@ ul.list-group.list-group-horizontal{
     }
 }
 
-@keyframes mysql {
+@keyframes comunicacion {
     0% {
         width: 0%;
     }
     100% {
-        width: 80%;
+        width: 85%;
     }
 }
+
+@keyframes equipo {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes creatividad {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
 
 /* Seccion Portfolio */
 
@@ -524,28 +551,28 @@ footer a {
 
 /* Seccion responsive */
 
-@media screen and (max-width: 800px) {
-    .iconos {
+@media screen and (max-width: 980px) {
+    .iconos{
         display: none;
     }
     #links {
-        display: none;
-    }
-    #links.responsive {
         display: block;
-        background-color: rgba(0, 0, 0, .8);
-        width: 100%;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        padding: 10px 0;
     }
-    #links.responsive ul {
+    #links.directorio {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+    #links.directorio ul {
         display: block !important;
         text-align: center;
     }
-    #links.responsive ul li {
-        margin: 5px 0;
+    #links.directorio ul li {
+        border-bottom: 1px solid #ffff;
+        padding: 10px 0;
     }
     #icono-nav {
         display: block;
