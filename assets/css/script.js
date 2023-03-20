@@ -27,10 +27,11 @@ function efectoHabilidades() {
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight = skills.getBoundingClientRect().top;
     if (distancia_skills >= 300) {
-        document.getElementById("html").classList.add("barra-progreso1");
-        document.getElementById("css").classList.add("barra-progreso2");
-        document.getElementById("js").classList.add("barra-progreso3");
-        document.getElementById("bs").classList.add("barra-progreso4");
-        document.getElementById("mysql").classList.add("barra-progreso5");
+        document.getElementById("htmlcss").classList.add("barra-progreso1");
+        document.getElementById("js").classList.add("barra-progreso2");
+        document.getElementById("bootstrap").classList.add("barra-progreso3");
+        document.getElementById("comunicacion").classList.add("barra-progreso4");
+        document.getElementById("equipo").classList.add("barra-progreso5");
+        document.getElementById("creatividad").classList.add("barra-progreso5");
     }
 }

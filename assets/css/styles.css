@@ -163,8 +163,8 @@ ul.list-group.list-group-horizontal{
     margin: 0% 10%;
 }
 
-.titulo {
-    font-size: 22px;
+.titulosobremi {
+    font-size: 30px;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
@@ -172,18 +172,18 @@ ul.list-group.list-group-horizontal{
     text-decoration-thickness: 5px;
 }
 
-.sobre mi h2 {
+.sobremi h2 {
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
 }
 
-.sobre mi h2 span {
+.sobremi h2 span {
     color: purple;
 }
 
-.sobre mi h3 {
+.sobremi h3 {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -191,11 +191,38 @@ ul.list-group.list-group-horizontal{
     letter-spacing: 1px;
 }
 
-.sobre mi p {
+.sobremi p {
     font-size: 14px;
     line-height: 25px;
-    color: #56565656;
+    color: black;
     margin-bottom: 12px;
+}
+
+.sobremi h4 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.sobremi ul {
+    list-style: none;
+}
+
+.sobremi ul li {
+    margin: 12px 0;
+}
+
+.sobremi ul li strong {
+    display: inline-block;
+    color: purple;
+    width: 130px;
+}
+
+.sobremi ul li span {
+    background-color: purple;
+    color: #ffff;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 /* Seccion estudios y experiencia */
@@ -225,30 +252,45 @@ ul.list-group.list-group-horizontal{
     margin-top: 30px;
 }
 
-#resumen .col {
+.titulo {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+.colresumen {
     width: 45%;
 }
 
-#resumen .col table {
+#resumen .colresumen table {
     margin-top: 30px;
     border-collapse: collapse;
 }
 
-#resumen .datos {
-    width: 40%;
+.datos {
+    width: 50%;
     border-bottom: 1px solid #bab9b9;
 }
 
-#resumen .col table h4 {
+.colresumen table h4 {
     margin-top: 10px;
 }
 
-#resumen .col table h3 {
+.colresumen table h3 {
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-#resumen .col table p {
+.colresumen table h6 {
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.colresumen table p {
     font-size: 14px;
 }
 
@@ -347,7 +389,7 @@ ul.list-group.list-group-horizontal{
 }
 
 .equipo {
-    width: 75%;
+    width: 85%;
     animation: 2s equipo forwards;
 }
 
@@ -388,7 +430,7 @@ ul.list-group.list-group-horizontal{
         width: 0%;
     }
     100% {
-        width: 85%;
+        width: 80%;
     }
 }
 
@@ -397,7 +439,7 @@ ul.list-group.list-group-horizontal{
         width: 0%;
     }
     100% {
-        width: 75%;
+        width: 85%;
     }
 }
 
