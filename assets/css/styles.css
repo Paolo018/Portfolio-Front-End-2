@@ -1,11 +1,4 @@
-/* Seccion inicio */
-
-#inicio {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/img/inicio.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
+/* Seccion Navbar */
 
 #navbar {
     position: fixed;
@@ -31,7 +24,11 @@
     margin: 0px 12px;
     font-weight: 400;
     transition: 0.5s;
-    display: block;
+    display: none;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 #icono-nav:hover {
@@ -48,15 +45,6 @@
 
 .directorio li a:hover {
     color: purple;
-}
-
-.presentacion h2{
-    color: #fff;
-}
-
-.apellido {
-    color: purple;
-    font-size: 3rem;
 }
 
 i.fa-brands.fa-codepen.fa-xl,i.fa-brands.fa-linkedin.fa-xl,i.fa-brands.fa-github.fa-xl,i.fa-solid.fa-user-lock.fa-xl {
@@ -86,6 +74,15 @@ ul.list-group.list-group-horizontal{
     --bs-list-group-border-color: transparent;
 }
 
+/* Inicio */
+
+#inicio {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/assets/img/inicio.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 .inicio {
     max-width: 100%;
     height: 100%;
@@ -95,6 +92,15 @@ ul.list-group.list-group-horizontal{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.presentacion h2{
+    color: #fff;
+}
+
+.apellido {
+    color: purple;
+    font-size: 3rem;
 }
 
 .inicio h1 {
@@ -159,6 +165,32 @@ ul.list-group.list-group-horizontal{
     background-color: #3f3f3f;
 }
 
+#sobremi i {
+    margin: -60px;
+    transition: 0.5s;
+    width: 150px;
+    border-style: none;
+}
+
+.imgPerfilModal {
+    margin-left: 250px;
+    border-radius: 10px;
+}
+
+.nombrePerfilModal {
+    border-radius: 10px;
+    padding-top: 55px;
+}
+
+.infoPerfilModal {
+    border-radius: 10px;
+    padding-top: 190px;
+}
+
+#sobremi i:hover {
+    color: purple;
+}
+
 .sobremi {
     margin: 0% 10%;
 }
@@ -173,7 +205,7 @@ ul.list-group.list-group-horizontal{
 }
 
 .sobremi h2 {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
@@ -297,6 +329,40 @@ ul.list-group.list-group-horizontal{
 #resumen .descripcion {
     border-left: 1px solid #bab9b9;
     padding-left: 20px;
+}
+
+.editorexperiencia {
+    margin: auto;
+    transition: 0.5s;
+    width: 100px;
+    padding-top: 90px;
+}
+
+.añadirExperiencia {
+    width: 40px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 10px;
+}
+
+
+.eliminarExperiencia {
+    margin: -38px 100px;
+    width: 40px;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 10px;
+    border-radius: 10px;
+}
+
+.eliminarExperiencia:hover, .añadirExperiencia:hover {
+    background-color: purple;
+    color: #ffff;
 }
 
 /* Seccion habilidades */
@@ -452,6 +518,24 @@ ul.list-group.list-group-horizontal{
     }
 }
 
+.editorskills {
+    margin: auto;
+    padding: 0 95%;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.añadirskills {
+    padding: 10px;
+}
+
+.eliminarskills {
+    padding: 10px;
+}
+
+.editarskills {
+    padding: 10px;
+}
 
 /* Seccion Portfolio */
 
@@ -607,6 +691,7 @@ footer a {
         top: 75px;
         background-color: #252a2e;
         width: 180px;
+        transition: 0.5s;
     }
     #links.directorio ul {
         display: block !important;

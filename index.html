@@ -85,78 +85,31 @@
   </div>
 </div>
 
-<!--Inicio-->
-<section id="inicio" class="inicio">
-  <h1 class="text-center p-3">Bienvenidos</h1>
-  <div class="container text-center">
-  <div class="row">
-    <div class="presentacion">
-        <h2>Soy <span class="apellido">Pablo Paredes</span>, Full Stack Developer Jr.</h2>
-        <a href="#portfolio">Ir a portfolio</a>
+<!-- Modal editar foto inicio-->
+<div class="modal fade" id="editarFotoModal" tabindex="-1" aria-labelledby="editarFotoModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="editarFotoModal">Editar imagen</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">  
+            <label for="editarFoto" class="form-label">Editar imagen</label>
+            <input type="url" placeholder="inserte url de imagen" id="editarFoto" name="editarFoto" required>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
-</section>
-
-<!-- Sobre mi -->
-<section id="sobremi">
-      <div class="imgPerfil">
-        <img src="assets/img/WhatsApp Image marzo.jpeg" alt="Foto-de-perfil">
-      </div>
-      <div class="sobremi">
-        <h1 class="titulosobremi">Sobre mi</h1>
-        <h2>Hola, soy <span>Pablo Paredes</span></h2>
-        <h3>Full Stack Developer Jr.</h3>
-        <p>Trabajo en el Correo Argentino, soy auxiliar y busco crecer en el ambito laboral. 
-          Realice trabajos administrativos en la sucursal CDP Caba Norte en el correo, Data Enty y varias tareas administrativas.
-        </p>
-
-        <h4>Datos Personales</h4>
-        <ul>
-          <li>
-            <strong>Edad</strong>
-            21
-          </li>
-          <li>
-            <strong>Teléfono</strong>
-            11-3166-5551
-          </li>
-          <li>
-            <strong>Email</strong>
-            Thepablodead18@gmail.com
-          </li>
-          <li>
-          <strong>Dirección</strong>
-          Av. Osvaldo Cruz 2313
-          </li>
-          <li>
-           <strong>Cargo Actual</strong>
-           <span>Auxiliar</span>
-          </li>
-        </ul>
-           
-      </div>
-
-</section>
-
-<!-- Editor sobre mi -->
-<section id="editSobre" class="bg-dark p-4">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">
-          Editar imagen
-        </button>
-      </div>
-      <div class="col">
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#nombrePerfilModal">Editar nombre</button>
-      </div>
-      <div class="col">
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#infoPerfilModal">Editar info</button>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Modal editar img Perfil-->
 <div class="modal fade" id="imgPerfilModal" tabindex="-1" aria-labelledby="imgPerfilModal" aria-hidden="true">
@@ -210,7 +163,7 @@
   </div>
 </div>
 
-<!-- Modal editar img Perfil-->
+<!-- Modal editar info Perfil-->
 <div class="modal fade" id="infoPerfilModal" tabindex="-1" aria-labelledby="infoPerfilModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -235,6 +188,194 @@
     </div>
   </div>
 </div>
+
+
+<!-- Modal añadir experiencia-->
+<div class="modal fade" id="añadirExperienciaModal" tabindex="-1" aria-labelledby="añadirExperienciaModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="añadirExperienciaModal">Añadir experiencia</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">  
+            <label for="añadirExperienciaModal" class="form-label">Trabajo</label>
+            <input type="email" class="form-control" id="añadirExperienciaModal">
+          </div>
+          <div class="mb-3">  
+            <label for="fecha" class="form-label">Fecha</label>
+            <input type="date" class="form-control" id="fecha">
+          </div>
+
+          <div class="mb-3">  
+            <label for="añadirExperiencia" class="form-label">Texto</label>
+            <textarea class="form-control" id="añadirExperiencia"></textarea>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal eliminar experiencia -->
+<div class="modal fade" id="eliminarExperienciaModal" tabindex="-1" aria-labelledby="eliminarExperienciaModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="eliminarExperienciaModal">Editar nombre de perfil</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">  
+            <label for="nombrePerfil" class="form-label">Editar nombre</label>
+            <input type="email" placeholder="nombre de perfil" id="nombrePerfil" name="nombrePerfil" required>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal añadir skills-->
+<div class="modal fade" id="añadirSkillsModal" tabindex="-1" aria-labelledby="añadirSkillsModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="añadirSkillsModal">Añadir skill</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+            <div class="mb-3">  
+              <label for="añadirSkillsModal" class="form-label">Skill</label>
+              <input type="email" class="form-control" id="añadirSkillsModal">
+            </div>
+            <div class="mb-3">  
+              <label for="range" class="form-label">Porcentaje</label>
+              <input type="range" class="form-control" id="range">
+            </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal editar skills-->
+<div class="modal fade" id="editarSkillsModal" tabindex="-1" aria-labelledby="editarSkillsModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="editarSkillsModal">Editar skills</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">  
+            <label for="editarSkillsModalModal" class="form-label">Texto</label>
+            <textarea class="form-control" id="editarSkillsModal"></textarea>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Inicio-->
+<div id="inicio" class="inicio">
+  <h1 class="text-center p-3">Bienvenidos</h1>
+  <div class="container text-center">
+  <div class="row">
+    <div class="presentacion">
+        <h2>Soy <span class="apellido">Pablo Paredes</span>, Full Stack Developer Jr.</h2>
+        <a href="#portfolio">Ir a portfolio</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Sobre mi -->
+<section id="sobremi">
+  
+      <div class="imgPerfil">
+        <div class="imgPerfilModal">
+        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">
+          <i class="fa-solid fa-camera-retro"></i>
+        </button></div>
+        <img src="assets/img/WhatsApp Image marzo.jpeg" alt="Foto-de-perfil">
+      </div>
+      <div class="sobremi">
+        <h1 class="titulosobremi">Sobre mi</h1>
+        <h2>Hola, soy <span>Pablo Paredes</span></h2>
+        <h3>Full Stack Developer Jr.</h3>
+        <p>Vivo en Capital Federal, Buenos Aires. Trabajo en el Correo Argentino, soy auxiliar y busco adentrarme en la rama de desarrollo web para 
+          crecer y progresar. 
+          Realice trabajos administrativos en la sucursal CDP Caba Norte en el correo, Data Enty y varias tareas administrativas.
+        </p>
+
+        <h4>Datos Personales</h4>
+        <ul>
+          <li>
+            <strong>Edad</strong>
+            21
+          </li>
+          <li>
+            <strong>Teléfono</strong>
+            11-3166-5551
+          </li>
+          <li>
+            <strong>Email</strong>
+            Thepablodead18@gmail.com
+          </li>
+          <li>
+          <strong>Dirección</strong>
+          Av. Osvaldo Cruz 2313
+          </li>
+          <li>
+           <strong>Cargo Actual</strong>
+           <span>Auxiliar</span>
+          </li>
+        </ul>
+      </div>
+      <div class="nombrePerfilModal">
+      <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#nombrePerfilModal">
+        <i class="fa-sharp fa-solid fa-pencil"></i>
+      </button>
+      <div class="infoPerfilModal">
+        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#infoPerfilModal">
+          <i class="fa-sharp fa-solid fa-pencil"></i>
+        </button>
+      </div>
+      </div>
+
+
+</section>
 
 <!-- Seccion estudios y experiencia -->
 <section id="resumen" class="resumen">
@@ -289,6 +430,18 @@
             </td>
           </tr>
         </table>
+        <div class="editorexperiencia">
+         <div class="añadirExperiencia">
+          <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#añadirExperienciaModal">
+            <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+            <div class="eliminarExperiencia">
+              <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#eliminarExperienciaModal">
+                <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -356,6 +509,23 @@
         </div>
         </div>
     </div>
+  </div>
+  <div class="editorskills">
+    <div class="añadirskills">
+      <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#añadirSkillsModal">
+        <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+        <div class="eliminarskills">
+          <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#eliminarSkillsModal">
+            <i class="fa-solid fa-trash-can"></i>
+            </button>
+        </div>
+        <div class="editarskills">
+          <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#editarSkillsModal">
+            <i class="fa-sharp fa-solid fa-pencil"></i>
+            </button>
+          </div>
   </div>
 
 </section>
